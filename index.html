@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formium</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper teal">
+      <a href="#" class="brand-logo center">
+        <i class="material-icons">list</i>
+        Formium
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form  id="main_form">
+        <div class="input-field">
+          <label for="first-name">First Name</label>
+          <input type="text" name="firstName" id="first-name"/>
+        </div>
+        <div class="input-field">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="lastName" id="last-name" />
+        </div>  
+        <div class="input-field">
+          <label for="postal">Postal Code</label>
+          <input type="text" name="postal" id="postal"/>
+        </div>
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" pattern="/\w+@\w+\.\w+/"/>
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-field">
+          <label for="password2">Confirm Password</label>
+          <input type="password" name="pasword2" id="password2" />
+        </div>
+        <ul class="collection">
+          <li class="collection-item alert" id="pwdChar">
+            <i class="material-icons">error</i>
+            <span>At least 8 characters</span>
+          </li>
+          <li class="collection-item alert" id="pwdUpp">
+            <i class="material-icons">error</i>
+            <span>At least 1 uppercase letter</span>
+          </li>
+          <li class="collection-item alert" id=pwdNum>
+            <i class="material-icons">error</i>
+            <span>At least 1 number</span>
+          </li>
+          <li class="collection-item alert" id=pwdSpc>
+            <i class="material-icons">error</i>
+            <span>At least 1 special character</span>
+          </li>
+        </ul>
+        <label for="consent">
+          <input type="checkbox" class="filled-in" name="consent" id="consent">
+          <span>
+            By checking this item, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </span>
+        </label>    
+        <p></p>
+        <button type="submit" class="waves-effect waves-light btn-small">
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+  </main>
+  <footer class="container">
+    <p>Already have an account? <a href="#">Login Here</a></p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

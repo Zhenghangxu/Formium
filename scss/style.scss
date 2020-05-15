@@ -1,0 +1,19 @@
+@import "variable";
+body{
+  display: grid;
+  gap: 1rem;
+}
+
+.alert{
+  display: flex;
+  align-items: center;
+  color: $inactive-color;
+  font-size: 1em;
+}
+.success{
+  @extend .alert;
+  color: $success-color;
+}
+.brand-logo{
+  margin-left: 1rem;
+}

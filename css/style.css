@@ -1,0 +1,25 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.alert, .success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(108, 117, 125, 0.8);
+  font-size: 1em;
+}
+
+.success {
+  color: #28A745;
+}
+
+.brand-logo {
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
